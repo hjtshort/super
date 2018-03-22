@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+.nav-custom .btn-sidebar {
+  border-radius: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fafafa; }
+
+.btn-diemdanh {
+  cursor: pointer;
+  text-align: center;
+  padding: 9px 15px 9px 15px;
+  border-radius: 0;
+  color: #fff !important;
+  background: #c70000; }
+  .btn-diemdanh:hover {
+    text-decoration: none;
+    background-color: #db1414; }
+  .btn-diemdanh:active {
+    position: relative;
+    top: 1px;
+    color: #c70000; }
+
+.btn-nhapdiem {
+  cursor: pointer;
+  text-align: center;
+  padding: 9px 15px 9px 15px;
+  border-radius: 0;
+  color: #fff !important;
+  background: #008eff; }
+  .btn-nhapdiem:hover {
+    text-decoration: none;
+    background-color: #14a2ff; }
+  .btn-nhapdiem:active {
+    position: relative;
+    top: 1px;
+    color: #008eff; }
+
+.chonmon {
+  margin-bottom: 30px; }
+
+#save, .info {
+  display: none; }
+
+table-editable {
+  position: relative; }
+
+.login-body {
+  background-color: #008eff; }
+  .login-body .card-login {
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    -moz-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999; }
+    .login-body .card-login .avatar {
+      width: 250px;
+      height: 250px; }
+      .login-body .card-login .avatar img {
+        width: 100%; }
+    .login-body .card-login .form-control {
+      border-radius: 0;
+      transition: all 0.3s; }
+      .login-body .card-login .form-control:focus {
+        border: none;
+        border-bottom: 2px solid #008eff;
+        border-color: none; }
+  .login-body .btn-login {
+    cursor: pointer;
+    text-align: center;
+    padding: 9px 15px 9px 15px;
+    border-radius: 0;
+    color: #fff !important;
+    background: #008eff; }
+    .login-body .btn-login:hover {
+      text-decoration: none;
+      background-color: #14a2ff; }
+    .login-body .btn-login:active {
+      position: relative;
+      top: 1px;
+      color: #008eff; }
+
+/*# sourceMappingURL=style.css.map */
