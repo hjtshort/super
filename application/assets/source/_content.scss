@@ -1,0 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fafafa;
+}
+.btn-diemdanh{
+    @include button($red, #fff);
+}
+.btn-nhapdiem{
+    @include button($tim, #fff);
+    border: none;
+}
+.chonmon{
+    margin-bottom: 30px;
+}
+#save, .info {
+    display: none;
+  }
+  table-editable {
+    position: relative;
+  }
+  

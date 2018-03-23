@@ -16,57 +16,32 @@
     <script src="application/assets/js/popper.js" crossorigin="anonymous"></script>
     <script src="application/assets/js/bootstrap.min.js"></script>
     <script src="application/assets/js/datatables.min.js"></script>
-    <script src="application/assets/js/responsiveDTTB.js"></script>
+    <script src="application/assets/js/jquery.tabledit.min.js"></script>
     <style type="text/css">
         div.container { max-width: 1200px }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <?php $this->load->view($header); ?>
+    <!-- Navbar -->
     <div class="wrapper">
+            <!-- Sidebar -->
+            <?php $this->load->view($sidebar); ?>
+            <!-- Sidebar -->
             <!-- Page Content -->
-    <div id="content">
-        <DIV class="diemdanh">
-            <table id="example" class="display responsive nowrap" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>Tên học phần</th>
-                        <th>Số tính chỉ</th>
-                        <th>Bắt buộc</th>
-                        <th>Tự chọn</th>
-                        <th>Tổng số tiết</th>
-                        <th>Số tiết lý thuyết</th>
-                        <th>Số tiết bài tập</th>
-                        <th>Kiểm tra</th>
-                        <th>Học kỳ</th>
-                    </tr>
-                </thead>
-            </table>
-        </DIV>
-    </div>
+            <div id="content">
+            <?php $this->load->view($noidung); ?>
+            </div>
             <!-- Page Content -->
     </div>
 </body>
-        <script type="text/javascript">
-$(document).ready(function() {
-    
-    $('#example').DataTable( {
-        "language": {
-            "url": "application/assets/css/vietnam.json"
-        },
-        "ajax": 'welcome/getvalue',
-        "columns": [
-            { "data": "tenhocphan" },
-            { "data": "sotc" },
-            { "data": "batbuot" },
-            {"data": "tuchon"},
-            { "data": "tongsotiet" },
-            { "data": "sotietlt" },
-           { "data": "sotietbt" },
-           { "data": "kiemtra" },
-           { "data": "hocki" }
-        ]
-     } );
-} )
+            <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
              
-</script>
+         </script>
 </html>

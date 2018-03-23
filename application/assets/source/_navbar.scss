@@ -1,0 +1,7 @@
+.nav-custom{
+    .btn-sidebar{
+        border-radius: 0;
+        @include button($tim,#fff);
+        border: none;
+    }
+}

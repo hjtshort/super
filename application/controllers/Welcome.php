@@ -10,7 +10,10 @@ class Welcome extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('index');
+		$data['header']='module/navbar';
+		$data['sidebar']='module/sidebar';
+		$data['noidung']='module/noidung-content';
+		$this->load->view('index',$data);
 	}
 	public function check()
 	{
@@ -22,10 +25,25 @@ class Welcome extends CI_Controller {
 			echo "ahuhu";
 		
 	}
-	public function getvalue()
+	public function get_table()
 	{
-		$data=array('data'=>$this->mother->getvalue());
-		echo json_encode($data, JSON_UNESCAPED_UNICODE);
+		if($this->input->post('chon')){		
+			$data=$this->mother->getvalue($this->input->post('chon'));
+			$t="";
+			foreach($data as $value){
+				$t.="<tr>
+						<td>".$value["tenhocphan"]."</td>
+						<td>".$value["sotc"]."</td>
+						<td>".$value["tongsotiet"]."</td>
+						<td>".$value["sotietlt"]."</td>
+						<td>".$value["sotietbt"]."</td>
+						<td>".$value["kiemtra"]."</td>
+						<td>".$value["hocki"]."</td>
+					</tr>";	
+			}
+			echo $t;
+
+		}
 	}
 	
 }

@@ -1,20 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 .nav-custom .btn-sidebar {
-  border-radius: 0;
-  cursor: pointer;
-  text-align: center;
-  padding: 9px 15px 9px 15px;
-  border-radius: 0;
-  color: #fff !important;
-  background: #9C27B0;
-  border: none; }
-  .nav-custom .btn-sidebar:hover {
-    text-decoration: none;
-    background-color: #b03bc4; }
-  .nav-custom .btn-sidebar:active {
-    position: relative;
-    top: 1px;
-    color: #a717c0; }
+  border-radius: 0; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -41,15 +27,14 @@ body {
   padding: 9px 15px 9px 15px;
   border-radius: 0;
   color: #fff !important;
-  background: #9C27B0;
-  border: none; }
+  background: #008eff; }
   .btn-nhapdiem:hover {
     text-decoration: none;
-    background-color: #b03bc4; }
+    background-color: #14a2ff; }
   .btn-nhapdiem:active {
     position: relative;
     top: 1px;
-    color: #a717c0; }
+    color: #008eff; }
 
 .chonmon {
   margin-bottom: 30px; }
@@ -61,7 +46,7 @@ table-editable {
   position: relative; }
 
 .login-body {
-  background-color: #9C27B0; }
+  background-color: #008eff; }
   .login-body .card-login {
     border-radius: 0;
     border: none;
@@ -78,7 +63,7 @@ table-editable {
       transition: all 0.3s; }
       .login-body .card-login .form-control:focus {
         border: none;
-        border-bottom: 2px solid #9C27B0;
+        border-bottom: 2px solid #008eff;
         border-color: none; }
   .login-body .btn-login {
     cursor: pointer;
@@ -86,13 +71,13 @@ table-editable {
     padding: 9px 15px 9px 15px;
     border-radius: 0;
     color: #fff !important;
-    background: #9C27B0; }
+    background: #008eff; }
     .login-body .btn-login:hover {
       text-decoration: none;
-      background-color: #b03bc4; }
+      background-color: #14a2ff; }
     .login-body .btn-login:active {
       position: relative;
       top: 1px;
-      color: #a717c0; }
+      color: #008eff; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

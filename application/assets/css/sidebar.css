@@ -55,7 +55,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #008eff;
+    background: #9C27B0;
     color: #fff;
     transition: all 0.3s;
 }
@@ -66,7 +66,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 10px;
-    background:#008eff;
+    background:#9C27B0;
 }
 
 #sidebar ul.components {

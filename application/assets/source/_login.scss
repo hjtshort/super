@@ -1,0 +1,27 @@
+.login-body{
+    background-color: $tim;
+    .card-login{
+        border-radius: 0;
+        border:none;
+        @include box-shadow(1px, 1px,5px, #999);
+        .avatar{
+            width: 250px;
+            height: 250px;
+            img{
+                width: 100%;
+            }
+        }
+        .form-control{
+            border-radius:0;
+            transition: all 0.3s;
+            &:focus{
+                border:none;
+                border-bottom: 2px solid $tim;
+                border-color: none;
+            }
+        }
+    }
+    .btn-login{
+        @include button($tim, #fff);
+    }
+}

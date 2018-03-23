@@ -15,9 +15,9 @@ class Mother extends CI_Model {
         else
             return false;
     }
-    public function getvalue()
+    public function getvalue($chon)
     {
-        return $this->db->get('monhoc')->result_array();
+        return $this->db->from('monhoc')->where($chon=="tc"? array('tuchon'=>'x'):array('batbuot'=>'x'))->get()->result_array();
     }
 }
 ?>
