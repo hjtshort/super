@@ -1,6 +1,4 @@
-/*
-    DEMO STYLE
-*/
+
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
 
@@ -44,9 +42,7 @@ a, a:hover, a:focus {
     margin: 40px 0;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -142,9 +138,7 @@ a.article, a.article:hover {
 
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
+
 #content {
     width: 100%;
     padding: 20px;
@@ -152,9 +146,7 @@ a.article, a.article:hover {
     transition: all 0.3s;
 }
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;

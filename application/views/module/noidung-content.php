@@ -77,7 +77,7 @@
            success: function (response) {
                $('#print').html(response)
                edit()
-              // $(".btn-toolbar").css("display","block");
+              $(".btn-toolbar").css("display","block");
            }
        });
    }
